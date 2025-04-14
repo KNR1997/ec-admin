@@ -9,6 +9,11 @@ const { i18n } = require('./next-i18next.config');
 //   runtimeCaching,
 // });
 
+console.log('BUILD ENV:', {
+  DEFAULT_LANGUAGE: process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE,
+  AVAILABLE_LANGUAGES: process.env.NEXT_PUBLIC_AVAILABLE_LANGUAGES,
+});
+
 const nextConfig = {
   reactStrictMode: true,
   i18n,
